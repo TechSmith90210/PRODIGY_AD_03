@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             }
             val final_time = String.format("%02d:%02d.%02d", minutes, seconds, milliseconds)
             time.text = final_time
-            handler.postDelayed(runnable, 100)
+            handler.postDelayed(runnable, 1)
         }
         handler.post(runnable)
     }
